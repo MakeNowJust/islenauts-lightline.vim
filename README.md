@@ -12,9 +12,10 @@ islenauts-lightline.vim is the color scheme for [lightline.vim](https://github.c
 
 ```viml
 " For neobundle.vim users
-NeoBundle 'MakeNowJust/islenauts-lightline.vim'
+NeoBundle 'MakeNowJust/islenauts-lightline.vim', { 'depends': ['itchyny/lightline.vim'] }
 
 " For Vundle users
+Plugin 'itchyny/lightline.vim'
 Plugin 'MakeNowJust/islenauts-lightline.vim'
 ```
 
