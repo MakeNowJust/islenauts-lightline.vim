@@ -11,6 +11,15 @@
 " |_/ \/ |__/|__/  |  |_/\_/|_/ \_/|_/|_/ \/
 "
 
+" plugin's convention (begin) {{{
+if exists('g:loaded_islenauts_lightline')
+  finish
+endif
+let g:loaded_islenauts_lightline = 1
+
+let s:save_cpo = &cpo
+set cpo&vim
+" }}}
 
 " set color variables {{{
 function! s:rgb_to_256(color)
@@ -73,6 +82,10 @@ let s:p.normal.error    = [[s:white, s:red]]
 
 " exports palette {{{
 let g:lightline#colorscheme#islenauts#palette = lightline#colorscheme#flatten(s:p)
+" }}}
+
+" plugin's convention (end) {{{
+let &cpo = s:save_cpo
 " }}}
 
 " vim: fdm=marker fdc=2 fdl=0
