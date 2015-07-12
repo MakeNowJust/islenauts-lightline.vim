@@ -17,6 +17,9 @@ NeoBundle 'MakeNowJust/islenauts-lightline.vim', { 'depends': ['itchyny/lightlin
 " For Vundle users
 Plugin 'itchyny/lightline.vim'
 Plugin 'MakeNowJust/islenauts-lightline.vim'
+
+" And, set lightline.vim's configuration
+let g:lightline = { 'colorscheme': 'islenauts' }
 ```
 
 ## author
